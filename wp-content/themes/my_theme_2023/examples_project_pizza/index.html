@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anna Kharytontseva">
+    <meta name="description" content="Garibaldi's Pizza">
+    <meta name="keywords" content="HTML, php, wordpress, project">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8b1d4450ed.js" crossorigin="anonymous"></script>
+    <title>Garibaldi's Pizza</title>
+</head>
+<body>
+    <header>
+        <h1>Garibaldi's Pizza</h1>
+        <button>Let me see the menu</button>
+        <div class="work-hours">
+            <p>Open from 10AM to 12PM</p>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="menu">
+            <div class="wrapper">
+                <h2>The Menu</h2>
+                <div id="tabs">
+                    <div id="tabs-heads">
+                        <button class="tab-head-item active">Pizza</button>
+                        <button class="tab-head-item">Salads</button>
+                        <button class="tab-head-item">Starter</button>
+                    </div>
+                    <div id="tabs-body">
+                        <div class="tab-item active">
+                            <ul class="menu-list">
+                                <li class="menu-item">
+                                    <h3>Margherita</h3>
+                                    <div class="price">
+                                        <p>$12.50</p>
+                                    </div>
+                                    <p>Fresh tomatoes, fresh mozarella, fresh basil</p>
+                                </li>
+                                <li class="menu-item">
+                                    <h3>Margherita</h3>
+                                    <div class="price">
+                                        <p>$12.50</p>
+                                    </div>
+                                    <p>Fresh tomatoes, fresh mozarella, fresh basil</p>
+                                </li>
+                                <li class="menu-item">
+                                    <h3 class="hot">Meat town</h3>
+                                    <div class="price">
+                                        <p>$20.00</p>
+                                    </div>
+                                    <p>Fresh tomatoes, mozarella, hot pepperoni, hot sausage, beef, chicken</p>
+                                </li>
+                                <li class="menu-item">
+                                    <h3 class="new">Parma</h3>
+                                    <div class="price">
+                                        <p>$21.50</p>
+                                    </div>
+                                    <p>Fresh tomatoes, mozarella, parma, bacon, fresh arugula</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="wrapper">
+                <h2>About</h2>
+                <p class="justify">Garibaldi's Pizza Restaurant was founded in blabla Mr. Patrizio Garibaldi in Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi nihil repellat sed sint. Accusantium architecto asperiores assumenda culpa doloribus est fuga magnam, minus numquam officia reiciendis repudiandae saepe, sint.</p>
+                <div>
+                    <p><b>The Chef?</b> Mr. Italiano himself.</p>
+                    <p>We are proud of our interiors.</p>
+                    <img class="chef" src="images/chef.jpg" alt="chef">
+                </div>
+                <img src="images/onepage_restaurant.jpg" alt="interior">
+                <h3>Opening Hours</h3>
+                <div class="working-hours">
+                    <p>Mon & Tue Closed</p>
+                    <p>Wednesday 10.00-24.00</p>
+                    <p>Thursday 10.00-24.00</p>
+                    <p>Friday 10.00-24.00</p>
+                    <p>Saturday 10.00-23.00</p>
+                    <p>Sunday Closed</p>
+                </div>
+            </div>
+        </section>
+        <section class="map"></section>
+        <section class="contact">
+            <div class="wrapper">
+                <h2>Contact</h2>
+                <p>Find us at some place or call us at 05050525-122330</p>
+                <p class="justify">We offer full-service catering for any event, large or small. We understand your needs and will cater the food to satisfy the biggest criteria of them all, both look and taste.</p>
+                <h3><b>Reserve</b> a table, ask for today's special or just send us a message:</h3>
+                <form name="reserve" id="reserve" action="">
+                    <input type="text" placeholder="Name">
+                    <input type="number" min="1" placeholder="How many people">
+                    <input type="date" placeholder="11/16/2020 08:00 PM">
+                    <input type="text" placeholder="Message \ Special requirements">
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <h3>Footer Area</h3>
+        </div>
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>

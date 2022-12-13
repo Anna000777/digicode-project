@@ -1,0 +1,410 @@
+/*
+    Theme Name: My New Theme 2023
+    Author: Anna Kharytontseva
+    Version: 1.0
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+button {
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    padding: 0.2em;
+}
+
+.page {
+    background-color: #986859;
+    color: white;
+}
+
+/*-----header--------*/
+header {
+   position: relative;
+}
+.header {
+    background: url("images/pizza.jpg") no-repeat center fixed;
+    background-size: cover;
+    min-height: 500px;
+    filter: grayscale(0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: relative;
+}
+
+.header h1 {
+    text-align: center;
+    align-self: center;
+    font-size: 6em;
+    font-weight: normal;
+    max-width: 300px;
+    text-transform: none;
+}
+.header button {
+    align-self: center;
+}
+.header button a {
+    color: white;
+}
+.header p {
+    background-color: black;
+    padding: 0.2em;
+    width: fit-content;
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 0.3em;
+    left: 0.4em;
+    opacity: 0.7;
+}
+
+/*------nav-------*/
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+    background-color: black;
+    opacity: 0.7;
+    padding: 0;
+}
+nav li {
+    padding: 0.4em;
+}
+nav li a{
+    color: white;
+    font-size: 1.5em;
+    padding: 0.2em;
+}
+nav li a:hover, nav li a.current-menu-item {
+    color: orange;
+}
+
+/*------main--------*/
+.wrapper {
+    padding: 3em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*------menu-------*/
+.menu {
+    background-color: black;
+    color: white;
+}
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+#tabs {
+    border: thin solid rgba(241, 233, 233, 0.3);
+}
+#tabs-heads{
+    display: flex;
+}
+#tabs-heads button {
+    flex: 1;
+    padding: 0.5em;
+}
+#tabs-heads .active {
+    background-color: #cb3333;
+}
+#tabs-body {
+    background-color: white;
+    color: black;
+}
+#tabs-body h3 {
+    font-size: 1.7em;
+    padding: 0.2em 0;
+}
+#tabs-body p {
+    font-size: 1.7em;
+    color: grey;
+    padding: 0.7em 0 0.3em;
+    flex-basis: 100%;
+}
+#tabs-body .price {
+    background-color: #656363;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+}
+#tabs-body .price p {
+    color: lightgrey;
+    padding: 0.2em;
+}
+#tabs-body .tab-item {
+    display: none;
+}
+#tabs-body .tab-item.active {
+    display: block;
+}
+.menu-list {
+    padding: 1em;
+}
+.menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+    border-bottom: thin solid rgba(211, 211, 211, 0.81);
+}
+.menu-item:last-child {
+    border-bottom: none;
+}
+.menu-item h3>a {
+    color: black;
+}
+.menu-item h3:hover {
+    scale: 1.1;
+}
+h3.hot::after {
+    content: "Hot!";
+    background-color: #cb3333;
+    color: white;
+    padding: 0.2em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+}
+h3.new::after {
+    content: "New";
+    background-color: grey;
+    color: black;
+    padding: 0.2em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+}
+h3.vegan::after {
+    content: "Vegan";
+    background-color: rgba(16, 134, 49, 0.762);
+    color: white;
+    padding: 0.2em;
+    margin-left: 0.2em;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+}
+
+/*-----about-----*/
+.about {
+    background-color: #986859;
+}
+.wrapper> div {
+    position: relative;
+}
+.about p {
+    color: white;
+    padding: 0.5em 0;
+}
+.about .bookmark:hover {
+    scale: 1.2;
+}
+.justify {
+    text-align: justify;
+}
+.about img {
+    width: 100%;
+    padding: 0.5em 0;
+    filter: grayscale(0.4);
+}
+img.chef {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    height: 100%;
+    width: auto;
+    filter: grayscale(0.4);
+}
+.about h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.about .working-hours {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 120px;
+}
+.bookmark {
+    position: absolute;
+    top: 0.5em;
+    left: -1.3em;
+    background-color: rgba(227, 224, 224, 0.6);
+    transform: rotate(100grad);
+    box-shadow: 2px 1px 4px lightgrey;
+}
+.bookmark a {
+    color: black;
+}
+.fa-bookmark {
+    font-size: 1.1em;
+}
+/*------map-----*/
+.map {
+    /*background: url("images/map.jpg") no-repeat center fixed;*/
+    height: 500px;
+    width: 100vw;
+    filter: grayscale(0.4);
+}
+
+/*------contact--------*/
+.contact {
+    background-color: gray;
+}
+.contact p {
+    color: white;
+    padding: 0.5em 0;
+}
+.contact p:nth-of-type(2)::before {
+    content: "FYI!";
+    background-color: black;
+    color: white;
+    padding: 0.1em;
+    margin-right: 0.2em;
+    font-weight: normal;
+    text-transform: none;
+    border-radius: 3px;
+}
+.contact h3 {
+    font-weight: normal;
+    color: white;
+    padding-bottom: 0.7em;
+}
+form#reserve {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.7em;
+}
+form#reserve input {
+    color: grey;
+    font-family: 'Amatic SC', cursive;
+    padding: 0.4em;
+}
+
+/*------footer------*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+footer .wrapper {
+    display: flex;
+    row-gap: 1em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+footer .wrapper h3 {
+    width: 100%;
+}
+footer .social-icons-list {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.social-icons-list a {
+    color: white;
+}
+
+/*------page------*/
+.page {
+    min-height: auto;
+}
+.page .wrapper {
+    position: relative;
+}
+p.category {
+    margin-bottom: 1.5em;
+    padding: 0 0.1em;
+    width: fit-content;
+    background-color: rgba(227, 224, 224, 0.8);
+    color: black;
+    /*box-shadow: -1px 1px 4px lightgrey;*/
+}
+p.category a {
+    color: black;
+}
+.page img {
+    max-width: 70%;
+    max-height: 200px;
+    border-radius: 50%;
+    filter: grayscale(40%);
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1.5em;
+}
+.page-content {
+    text-align: justify;
+}
+.page-content p {
+    padding: 0.5em 0;
+}
+.page .wrapper::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/*------*/
+.page.dish img {
+    width: auto;
+    height: auto;
+    box-shadow: -2px 1px 5px rgba(59, 57, 57, 0.91);
+}
+.page.dish .related-dishes::before {
+    content: '';
+    display:  block;
+    clear: both;
+}
+.page.dish .related-dishes p {
+    margin-bottom: 0;
+    width: 100%;
+}
+.page.dish .related-dishes-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.related-dishes-content h3 {
+    margin: 0.5em 0;
+    text-align: justify;
+}
+
+@media screen and (max-width: 375px) {
+    .page img {
+        max-width: 100%;
+    }
+    footer .wrapper div:first-of-type, footer .wrapper div:nth-of-type(2) {
+        width: 100%;
+    }
+}
